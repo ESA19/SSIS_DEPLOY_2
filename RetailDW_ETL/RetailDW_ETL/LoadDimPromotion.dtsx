@@ -11,8 +11,9 @@
   DTS:LocaleID="1055"
   DTS:ObjectName="LoadDimPromotion"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{F2CF02DD-F938-4113-B485-93401CCC674A}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{FE6F5D51-89CE-4DA8-B2D4-B5759CAA6A18}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -599,13 +600,13 @@ FROM Promotions</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="212,41.6"
-          Id="Package\SQL Truncate DimPromotion"
-          TopLeft="231.428571921222,4.58823529009588" />
-        <NodeLayout
           Size="193.6,49.6"
           Id="Package\DFT Load DimPromotion"
           TopLeft="242.857143374122,92.5294116836003" />
+        <NodeLayout
+          Size="212,41.6"
+          Id="Package\SQL Truncate DimPromotion"
+          TopLeft="231.428571921222,4.58823529009588" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="338.542857647672,46.1882352900959">
@@ -696,14 +697,6 @@ FROM Promotions</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT Load DimPromotion\SRC Promotions">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DFT Load DimPromotion\DST DimPromotion">
     <Properties>
       <Property>
@@ -713,6 +706,14 @@ FROM Promotions</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT Load DimPromotion\SRC Promotions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

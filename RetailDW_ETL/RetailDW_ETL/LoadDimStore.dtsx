@@ -11,8 +11,9 @@
   DTS:LocaleID="1055"
   DTS:ObjectName="LoadDimStore"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{57BD835B-386B-477D-8B22-28FB84E2CF1F}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{C32AD3F2-72D5-4B46-8F1E-07F317F45833}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -679,14 +680,6 @@ INNER JOIN Regions r ON s.RegionID=r.RegionID</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\SRC Stores">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\DST DimStore">
     <Properties>
       <Property>
@@ -696,6 +689,14 @@ INNER JOIN Regions r ON s.RegionID=r.RegionID</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\SRC Stores">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
