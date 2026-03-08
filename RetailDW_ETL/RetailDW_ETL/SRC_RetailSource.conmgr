@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SRC_RetailSource"
+  DTS:DTSID="{23FB70CF-4C5C-4757-B74C-85AEA218ADB1}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=ESA;Initial Catalog=RetailSource;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-LoadDimStore-{23FB70CF-4C5C-4757-B74C-85AEA218ADB1}ESA.RetailSource;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
